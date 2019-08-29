@@ -1,0 +1,15 @@
+{
+  "name": "windmill",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:aitorfernandez/windmill.git",
+  "author": "Aitor Fernandez <helloimaitor@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "rollup -c -w"
+  },
+  "devDependencies": {
+    "rollup": "^1.17.0",
+    "rollup-watch": "^4.3.1"
+  }
+}

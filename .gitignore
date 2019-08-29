@@ -1,0 +1,8 @@
+*.log
+*.swo
+*.swp
+.DS_Store
+.tags
+dist
+kko
+node_modules
