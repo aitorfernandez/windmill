@@ -32,11 +32,8 @@ export default (p) => {
     const round = (value) => Math.round(value * 100) / 100
 
     return (
-      round(d1 + d2) === round(d3)
-      // TODO: Review this later...
-      || round(d1 + d2) < (round(d3) + 0.02)
-      || round(d1 + d2) < (round(d3) + 0.04)
-      || round(d1 + d2) < (round(d3) + 0.06)
+      (round(d1+d2) === round(d3))
+      || (round(d1+d2) < round(d3) + 0.02)
     )
   }
 
@@ -49,7 +46,7 @@ export default (p) => {
   function setup() {
     p.createCanvas(len, len)
 
-    for (let i = 0; i < 4; i += 1) {
+    for (let i = 0; i < 2; i += 1) {
       points.push(createPoint())
     }
 
@@ -57,7 +54,7 @@ export default (p) => {
 
     p.frameRate(24)
 
-    // p.noLoop()
+    p.noLoop()
   }
 
   function draw() {
